@@ -24,7 +24,7 @@ let convertCurrency = () => {
   const fromCurrency = fromDropDown.value;
   const toCurrency = toDropDown.value;
   
-  if (amount.length != 0) {
+  if (amount.length >= 0 && amount.length <=10) {
     fetch(api)
       .then((resp) => resp.json())
       .then((data) => {
