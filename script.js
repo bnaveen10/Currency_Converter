@@ -36,7 +36,7 @@ let convertCurrency = () => {
         )} ${toCurrency}`;
       });
   } else {
-    alert("Please fill in the amount");
+    alert("Please fill in the valid amount");
   }
 };
 document
